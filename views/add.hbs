@@ -1,0 +1,31 @@
+<body id="particles-js"></body>
+<div class="animated bounceInDown">
+  <div class="container">
+    <span class="error animated tada" id="msg"></span>
+    <form action="/books" method="POST" enctype="multipart/form-data" name="form1" class="box" onsubmit="return checkStuff()">
+      <h4>Add<span style="margin-left: 8px;">Your book</span></h4>
+        <input type="text" name="title" placeholder="Title" autocomplete="off" required>
+        <select type="status" id="status" name="status" id="">
+            <option type="opt" value="public" selected>Public</option>
+            <option type="opt" value="private">Private</option>
+        </select>
+        <textarea type="about" class="scroll" name="about" id="about" cols="34" rows="2" placeholder="About the book" required></textarea>
+        <div class="uploads-up" style="display:flex; flex-direction: column;">
+          <label style="color:white; margin-right:4px; position:relative; left:-34%" for="upload">Book Cover &nbsp; &nbsp;
+              <span class="up-icon"><i style="color:white" class="fa-solid fa-upload"></i></span>
+          </label>
+          <input id="upload" style="visibility: hidden;" type="file" required name="myfile" />
+          {{!-- <label style="color:white; margin-right:4px; position:relative; left:-34%" for="upload">Avatar 
+                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              <span class="up-icon"><i style="color:white" class="fa-solid fa-upload"></i></span>
+          </label>
+          <input id="upload" style="visibility: hidden;" type="file" required name="myfile" /> --}}
+        </div>
+        <input type="submit" value="Add" class="btn1">
+        <a href="/dashboard" type="cancel" value="Cancel" class="btn2"><span class="btn-cancel">Cancel</span></a>
+      </form>
+  </div> 
+</div>
+<script src="/js/particles.js"></script>
+<script src="/js/app.js"></script>
+<script src="/js/script.js"></script>

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+
+body, html {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #1d243d;
+  padding: 0;
+  margin: 0;
+}
+
+.up-icon{
+  background-color: #3c497b;
+  padding:8px 15px; 
+  border-radius:6px;
+  cursor: pointer;
+  transition: 0.3;
+}
+
+.up-icon:hover{transform: scale(1.2s);}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.container{
+  margin: 0;
+  top: 40px;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: rgb( 33, 41, 66 );
+  border-radius: 9px;
+  border-top: 10px solid #79a6fe;
+  border-bottom: 10px solid #8BD17C;
+  width: 700px;
+  height: 600px;
+  box-shadow: 1px 1px 108.8px 19.2px rgb(25,31,53);
+}
+
+.box h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #5c6bc0; 
+  font-size: 28px;
+  margin-top:64px;;
+}
+
+.box h4 span {
+  color: #dfdeee;
+  font-weight: lighter;
+}
+
+.box input[type = "text"],.box select[type = "status"], .box textarea[type = "about"] {
+  display: block;
+  margin: 20px auto;
+  background: #262e49;
+  border: 0;
+  border-radius: 5px;
+  padding: 14px 10px;
+  width: 620px;
+  outline: none;
+  color: #d6d6d6;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  -ms-transition: all .2s ease-out;
+  -o-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  
+}
+::-webkit-input-placeholder {
+  color: #565f79;
+}
+
+.box input[type = "text"]:focus,.box select[type = "status"]:focus, .box textarea[type = "about"]:focus {
+  border: 1px solid #79A6FE;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+textarea{
+  resize: none;
+  overflow:auto;
+}
+
+.btn1 {
+  border:0;
+  background: #7f5feb;
+  color: #dfdeee;
+  border-radius: 100px;
+  width: 250px;
+  height: 49px;
+  font-size: 16px;
+  position: absolute;
+  top: 79%;
+  left: 9%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn2{
+  border:none;
+  background: #7f5feb;
+  color: #dfdeee;
+  border-radius: 100px;
+  width: 250px;
+  height: 49px;
+  font-size: 16px;
+  position: absolute;
+  top: 79%;
+  left:55%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background: #5d33e6;
+}
+
+.btn2:hover {
+  background: #5d33e6;
+  color: #fff;
+}
+
+.btn-cancel{
+  position: relative;
+  top:12px;
+}
+
+.error {
+  background: #ff3333;
+  text-align: center;
+  width: 337px;
+  height: 20px;
+  padding: 2px;
+  border: 0;
+  border-radius: 5px;
+  margin: 10px auto 10px;
+  position: absolute;
+  top: 31%;
+  left: 7.2%;
+  color: white;
+  display: none;
+}
+
+
+
+
+
+
+
+
+
